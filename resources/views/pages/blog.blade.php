@@ -16,11 +16,11 @@
 
                     <div class="h-full flex flex-col justify-between p-4">
                         <div class="space-y-2">
-                            <h1 class="text-lg font-bold line-clamp-1">{{ $post['title'] }}</h1>
-                            <p class="text-gray-600 text-sm line-clamp-2">{{ $post['body'] }}</p>
+                            <h1 class="text-lg font-bold line-clamp-1">{{ $post->title }}</h1>
+                            <p class="text-gray-600 text-sm line-clamp-2">{{ $post->body }}</p>
                         </div>
 
-                        <a href="/blog/post/{{ $post['slug'] }}">
+                        <a href="/blog/post/{{ $post->slug }}">
                             <button class="w-full bg-blue-500 text-white rounded-lg px-4 py-2 font-semibold">
                                 Read More &raquo;
                             </button>

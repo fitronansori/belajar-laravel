@@ -10,13 +10,15 @@
         </div>
 
         <div class="text-center py-4">
-            <h1 class="text-4xl font-semibold">{{ $post['title'] }}</h1>
-            <span class="text-gray-600 text-lg">By Fitron Ansori</span>
+            <h1 class="text-4xl font-semibold">{{ $post->title }}</h1>
+            <span class="text-gray-600 text-lg">
+                By Fitron Ansori {{ $post->created_at->format('j F, Y') }}
+            </span>
         </div>
 
         <div class="py-4 text-justify space-y-4 text-gray-900">
             <p>
-                {{ $post['body'] }}
+                {{ $post->body }}
             </p>
 
             <p>
